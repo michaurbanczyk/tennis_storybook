@@ -1,0 +1,6 @@
+# project specific
+node_modules
+.cache
+
+# IDE
+.idea
