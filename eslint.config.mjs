@@ -22,7 +22,7 @@ export default [{
         "@typescript-eslint": typescriptEslint,
         prettier,
     },
-
+    files: ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"],
     languageOptions: {
         globals: {
             ...globals.browser,
@@ -31,8 +31,11 @@ export default [{
 
         parser: tsParser,
     },
-
     rules: {
         "prettier/prettier": "error",
+        "@typescript-eslint/no-explicit-any": "off",
     },
+    ignores: [
+      "node_modules"
+    ],
 }];
