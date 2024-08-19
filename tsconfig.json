@@ -24,13 +24,7 @@
     "outDir": "dist",
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"],
-      "@themes/*": ["themes/*"],
-      "@storybook/*": ["../storybook/*"],
-      "@icons": ["icons/index.tsx"],
-      "@utils/*": ["utils/*"],
-      "@hooks/*": ["hooks/*"],
-      "@test-utils": ["../test-utils/index.tsx"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [

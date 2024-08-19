@@ -18,6 +18,8 @@
     "@chromatic-com/storybook": "^1.6.1",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.9.0",
+    "@fontsource/material-icons": "^5.0.19",
+    "@fontsource/roboto": "^5.0.14",
     "@storybook/addon-essentials": "^8.2.9",
     "@storybook/addon-interactions": "^8.2.9",
     "@storybook/addon-links": "^8.2.9",
@@ -35,12 +37,14 @@
     "prettier": "^3.3.3",
     "prop-types": "^15.8.1",
     "storybook": "^8.2.9",
+    "storybook-addon-jsx": "^7.3.14",
     "typescript": "^5.5.4"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.7",
-    "@mui/material": "^5.16.7"
+    "@mui/material": "^5.16.7",
+    "emotion-theming": "^11.0.0"
   }
 }
