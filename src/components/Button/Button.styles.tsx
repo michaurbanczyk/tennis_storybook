@@ -7,6 +7,9 @@ export const StyledButton = styled(MuiButton, {
 })(({ theme, color }) => {
   const { Button } = theme.customComponents;
   return {
+    "&.MuiButton-root": {
+      padding: theme.spacing(2, 3),
+    },
     "&.MuiButton-contained": {
       backgroundColor:
         color === "primary"

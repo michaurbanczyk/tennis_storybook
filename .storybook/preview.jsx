@@ -1,7 +1,5 @@
 import React, { useMemo } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import { darkTheme } from "../src/themes/dark/dark.theme";
-import { lightTheme } from "../src/themes/light/light.theme";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -9,6 +7,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "@fontsource/material-icons";
 import { australianOpenTheme } from "../src/themes/ao/ao.theme";
+import { rolandGarrosTheme } from "../src/themes/rg/rg.theme";
 
 export const globalTypes = {
   theme: {
@@ -22,7 +21,7 @@ export const globalTypes = {
       items: [
         { value: "ao", left: "☀️", title: "Australian Open" },
         { value: "wim", left: "🌙", title: "Wimbledon" },
-        { value: "eg", left: "🌙", title: "Roland Garros" },
+        { value: "rg", left: "🌙", title: "Roland Garros" },
       ],
     },
   },
@@ -40,9 +39,8 @@ export const parameters = {
 };
 
 const THEMES = {
-  dark: darkTheme,
-  light: lightTheme,
   ao: australianOpenTheme,
+  rg: rolandGarrosTheme,
 };
 
 export const withMuiTheme = (Story, context) => {
